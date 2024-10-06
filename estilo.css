@@ -1,0 +1,277 @@
+html {
+    cursor: url('Imagenes/download__3_-removebg-preview.png') 26 26, auto;
+}
+
+a:hover{
+    cursor: url('Imagenes/download__3_-removebg-preview.png') 26 26, auto;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    background-image: url('Imagenes/Fondo.jpeg'); /* Ruta local a la carpeta "Imagenes" */
+    background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 80px;
+    font-size: 3rem;
+    color: #f7f7f7;
+    text-shadow: 2px 2px 10px #00c3ff;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.titulo-galeria {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 40px;
+    color: #fff; 
+}
+
+.planeta h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+
+.content p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+/* Menú de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo {
+    color: #00c3ff;
+    font-size: 24px;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 2px;
+}
+
+/* Centra los enlaces de navegación */
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-grow: 0.1;
+    justify-content: center; 
+    cursor: url('Imagenes/download__3_-removebg-preview.png'), auto;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    color: #f7f7f7;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.nav-links li a:hover {
+    color: #00c3ff;
+    text-shadow: 0px 0px 10px #00c3ff;
+}
+
+/* Estilo del ícono de hamburguesa */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    flex-grow: 0.07; 
+    justify-content: center; 
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background: #00c3ff;
+    margin: 4px;
+    border-radius: 5px;
+}
+
+.Nave {
+    width: 100%;
+    max-width: 800px; /* Limitar el tamaño máximo en pantallas grandes */
+    height: 400px;
+    border: 1px solid black;
+}
+
+.Nave2 { 
+    width: 100%;
+    height: 285px;
+    max-width: 800px;
+    margin: 18px 1px 1px 1px;
+    padding-top: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #00c3ff;
+    object-fit: cover;
+}
+
+
+@media (max-width: 768px) {
+    .content h1 {
+        font-size: 2rem;
+    }
+
+    .content p {
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .content h1 {
+        font-size: 1.5rem;
+    }
+
+    .content p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .Nave, .Nave2 {
+        max-width: 90%; /* Aumentar la anchura en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .Nave, .Nave2 {
+        max-width: 95%; /* Aumentar más en pantallas aún más pequeñas */
+    }
+}
+
+@media (max-width: 768px) {
+    .Nave2 {
+        max-width: 90%; /* Permite que el GIF se ajuste al ancho de la pantalla */
+        height: auto; /* Mantiene la proporción */
+    }
+}
+
+@media (max-width: 480px) {
+    .Nave2 {
+        max-width: 400%; /* Se asegura que en pantallas pequeñas el GIF ocupe todo el ancho */
+        height: auto; /* Mantiene la proporción */
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.95);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links.show {
+        display: flex;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+
+
+#galeria {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.fila {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.planeta {
+    text-align: center;
+    width: 23%;
+}
+
+.planeta h1 {
+    margin-bottom: 10px;
+}
+
+.planeta iframe {
+    width: 100%;
+    height: 300px;
+}
+
+@media (max-width: 1024px) {
+    .planeta {
+        width: 45%; 
+    }
+}
+
+@media (max-width: 768px) {
+    .planeta {
+        width: 100%;
+    }
+}
+
+
+/* Estilo del iframe */
+iframe {
+    border: 2px solid #00c3ff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px #00c3ff;
+    margin-top: 20px;
+}

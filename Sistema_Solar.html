@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Navegación Espacial</title>
+    <link rel="stylesheet" href="estilo_sistema.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Sistema Solar</div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="../Pe/inicio.php">Inicio</a></li>
+            <li><a href="Sistema_Solar/Planetario.html">Sistema Solar</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- El contenido principal será el iframe a pantalla completa -->
+    <div class="content_a">
+        <iframe class="Nave" src="HTML_FINAL/Planetario.html" width="1500" height="650"></iframe>
+    </div>
+
+    <audio autoplay loop>
+        <source src="Musica/Fondo.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="menu.js"></script>
+</body>
+</html>
